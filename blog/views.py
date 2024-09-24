@@ -12,7 +12,7 @@ class StartingPageView(ListView):
     template_name = "blog/index.html"
     model=Post
     odering = ["-date"]
-    context_object_name = "posts"
+    context_object_name = "posts" 
     
     def get_queryset(self):
         queryset = super().get_queryset()
